@@ -21,12 +21,11 @@ public class _4_find_element_in_circularly_sorted_array {
 		print_array(arr);
 		System.out.println("item to find is : "+ item);
 		
-		
 		int low = 0, high = arr.length;
 
 		while (low < high) {
 			int mid = low + (high - low) / 2;
-			if (arr[mid] == item)
+			if (arr[mid] == item) //
 				return mid;
 			else if (arr[low] < arr[mid])// if left side is sorted
 			{
@@ -42,5 +41,4 @@ public class _4_find_element_in_circularly_sorted_array {
 		}
 		return -1;
 	}
-
 }
