@@ -1,6 +1,6 @@
-package treesAndGraphs.dfs;
+package treesAndGraphs.tree.dfs;
 
-import treesAndGraphs.Node;
+import treesAndGraphs.tree.Node;
 
 public class _0_InOrderRecursion {
 

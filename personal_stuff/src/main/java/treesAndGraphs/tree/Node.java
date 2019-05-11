@@ -1,4 +1,4 @@
-package treesAndGraphs;
+package treesAndGraphs.tree;
 
 public class Node<T> {
 	public T data;

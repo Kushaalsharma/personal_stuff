@@ -1,8 +1,5 @@
-package treesAndGraphs.dfs;
-
-import java.io.ObjectInputStream.GetField;
-
-import treesAndGraphs.Node;
+package treesAndGraphs.tree.dfs;
+import treesAndGraphs.tree.Node;
 
 public class _0_PreOrderRecursion {
 

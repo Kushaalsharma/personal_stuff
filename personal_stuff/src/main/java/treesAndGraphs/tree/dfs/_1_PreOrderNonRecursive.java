@@ -1,9 +1,9 @@
-package treesAndGraphs.dfs;
+package treesAndGraphs.tree.dfs;
 
 import java.awt.print.Printable;
 import java.util.Stack;
 
-import treesAndGraphs.Node;
+import treesAndGraphs.tree.Node;
 
 public class _1_PreOrderNonRecursive {
 	public static void main(String[] args) {
