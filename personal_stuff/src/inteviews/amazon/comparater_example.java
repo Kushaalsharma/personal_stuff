@@ -13,9 +13,8 @@ public class comparater_example {
 		boxList.add("123 old box a very old");
 		boxList.add("111 old box a old");
 		boxList.add("xyz old box stuff");
-		
+
 		System.out.println(orderedJunctionSets(3, boxList));
-		
 	}
 
 	public static List<String> orderedJunctionSets(int numberOfBoxes, List<String> boxList) {
