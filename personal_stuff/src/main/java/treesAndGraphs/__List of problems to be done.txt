@@ -1,13 +1,10 @@
 trees: 
 
+diagnal view
+spiral view
 post order traversal (non recursive) - one stack
 build a tree using given two traversal
-level order traversal
-top view
-left view 
-right view
-down view
-boundry view
+
 
 btrees : 
 isBST
