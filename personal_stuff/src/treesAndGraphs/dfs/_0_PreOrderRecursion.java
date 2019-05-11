@@ -1,4 +1,4 @@
-package treesAndGraphs;
+package treesAndGraphs.dfs;
 
 import java.io.ObjectInputStream.GetField;
 

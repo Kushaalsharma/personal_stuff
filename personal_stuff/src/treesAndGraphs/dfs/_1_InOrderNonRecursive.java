@@ -1,6 +1,8 @@
-package treesAndGraphs;
+package treesAndGraphs.dfs;
 
 import java.util.Stack;
+
+import treesAndGraphs.Node;
 
 public class _1_InOrderNonRecursive {
 	public static void main(String[] args) {
