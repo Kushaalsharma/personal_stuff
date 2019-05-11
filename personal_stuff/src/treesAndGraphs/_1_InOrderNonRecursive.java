@@ -1,6 +1,5 @@
 package treesAndGraphs;
 
-import java.awt.print.Printable;
 import java.util.Stack;
 
 public class _1_InOrderNonRecursive {
@@ -30,5 +29,4 @@ public class _1_InOrderNonRecursive {
 			current = current.right;
 		}
 	}
-
 }
