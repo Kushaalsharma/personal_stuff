@@ -6,25 +6,25 @@ public class _0_Right_View {
 
 	public static void main(String[] args) {
 		Node<Integer> root = Node.getBasicTree();
-		System.out.println("\n\n left view of the Tree is :: \n\n");
-		leftviewOfTree(root);
+		System.out.println("\n\n right view of the Tree is :: \n\n");
+		rightViewOfTree(root);
 
 	}
 
-	public static void leftviewOfTree(Node<Integer> root) {
-		leftViewUtil(root, 1);
+	public static void rightViewOfTree(Node<Integer> root) {
+		rightViewUtil(root, 1);
 	}
 
 	public static int maxlevel = 0;
 
-	public static void leftViewUtil(Node root, int level) {
+	public static void rightViewUtil(Node root, int level) {
 		if (root == null)
 			return;
 		if (level > maxlevel) {
 			System.out.print(" " + root.data + ", ");
 			maxlevel=level;
 		}
-		leftViewUtil(root.left, level + 1);
-		leftViewUtil(root.right, level + 1);
+		rightViewUtil(root.right, level + 1);
+		rightViewUtil(root.left, level + 1);
 	}
 }

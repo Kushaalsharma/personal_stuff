@@ -24,7 +24,7 @@ public class Node<T> {
 		System.out.println("tree is ::: ");
 		System.out.println("                              10");
 		System.out.println("            5                                        15");
-		System.out.println("     3                 7				   13                  17");
+		System.out.println("     3                 7                   13                  17");
 		System.out.println("   2   4            6     8             11    14             16    18");
 		Node node2 = new Node(2);
 		Node node4 = new Node(4);
