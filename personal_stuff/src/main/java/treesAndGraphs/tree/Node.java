@@ -49,12 +49,7 @@ public class Node<T> {
 		return root;
 	}
 
-	public static int height(Node root) {
-		if (root == null)
-			return 0;
-		int lHeight = height(root.left);
-		int rHeight = height(root.right);
-
-		return lHeight > rHeight ? lHeight + 1 : rHeight + 1;
+	public static void main(String[] args) {
+		getBasicTree();
 	}
 }
