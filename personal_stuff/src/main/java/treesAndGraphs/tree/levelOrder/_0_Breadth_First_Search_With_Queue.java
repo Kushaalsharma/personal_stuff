@@ -1,11 +1,11 @@
-package treesAndGraphs.tree.bfs;
+package treesAndGraphs.tree.levelOrder;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
 import treesAndGraphs.tree.Node;
 
-public class _0_breath_first_search_using_queue {
+public class _0_Breadth_First_Search_With_Queue {
 
 	public static void main(String[] args) {
 		Node root = Node.getBasicTree();
