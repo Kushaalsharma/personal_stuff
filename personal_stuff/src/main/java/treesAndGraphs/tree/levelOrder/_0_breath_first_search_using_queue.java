@@ -1,4 +1,4 @@
-package treesAndGraphs.tree.bfs;
+package treesAndGraphs.tree.levelOrder;
 
 import java.util.LinkedList;
 import java.util.Queue;
