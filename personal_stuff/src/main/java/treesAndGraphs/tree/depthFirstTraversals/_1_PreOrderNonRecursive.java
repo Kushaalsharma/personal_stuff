@@ -1,4 +1,4 @@
-package treesAndGraphs.tree.dfs;
+package treesAndGraphs.tree.depthFirstTraversals;
 
 import java.awt.print.Printable;
 import java.util.Stack;

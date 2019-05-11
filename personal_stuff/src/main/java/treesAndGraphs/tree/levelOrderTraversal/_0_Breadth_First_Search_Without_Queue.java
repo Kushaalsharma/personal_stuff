@@ -1,4 +1,4 @@
-package treesAndGraphs.tree.levelOrder;
+package treesAndGraphs.tree.levelOrderTraversal;
 
 import treesAndGraphs.tree.Node;
 

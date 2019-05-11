@@ -4,7 +4,7 @@ public class Node<T> {
 	public T data;
 	public Node<T> left;
 	@SuppressWarnings("rawtypes")
-	public Node right;
+	public Node<T> right;
 
 	public Node(T data, Node<T> left, Node<T> right) {
 		this.data = data;

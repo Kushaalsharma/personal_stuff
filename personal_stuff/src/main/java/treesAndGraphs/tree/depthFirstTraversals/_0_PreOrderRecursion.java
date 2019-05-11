@@ -1,4 +1,4 @@
-package treesAndGraphs.tree.dfs;
+package treesAndGraphs.tree.depthFirstTraversals;
 import treesAndGraphs.tree.Node;
 
 public class _0_PreOrderRecursion {
