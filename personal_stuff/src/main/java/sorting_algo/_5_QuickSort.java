@@ -1,6 +1,6 @@
 package sorting_algo;
 
-public class _5_quickSort {
+public class _5_QuickSort {
 
 	public static void main(String[] args) {
 		System.out.println(" Runing Bubble sort");
