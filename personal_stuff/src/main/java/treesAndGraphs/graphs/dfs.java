@@ -8,8 +8,8 @@ import java.util.LinkedList;
 public class dfs {
 	public static void main(String[] args) {
 		LinkedList<Integer>[] graph = getBasicGraph();
+		System.out.println("D F S is : ");
 		dfs(graph);
-
 	}
 
 	public static LinkedList<Integer>[] getBasicGraph() {
@@ -33,6 +33,8 @@ public class dfs {
 		LinkedList<Integer> three_links = new LinkedList<Integer>();
 		three_links.add(3);
 		graph[3] = three_links;
+
+		System.out.println("graph is :" + Arrays.toString(graph) + '\n');
 
 		return graph;
 	}
@@ -69,5 +71,4 @@ public class dfs {
 		// after visiting all the childs and their child ... , print the node value.
 		System.out.print("  " + nodeIndex + ", ");
 	}
-
 }
