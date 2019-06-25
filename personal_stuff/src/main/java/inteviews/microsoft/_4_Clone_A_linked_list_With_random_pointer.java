@@ -11,6 +11,7 @@ public class _4_Clone_A_linked_list_With_random_pointer {
 	public static Node cloneRandomList(Node root) {
 		if (root == null)
 			return null;
+		//store root node address in the next 
 		Node ptr = root;
 		while (ptr.next != null) {
 			Node newNode = new Node(ptr.data);
