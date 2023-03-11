@@ -17,8 +17,9 @@ public class _02_BinarySearch_reverse_sortedImpl {
     }
 
     /**
-     * Implementation of binary search algorithm.
-     * In this find the element in mid of the search window.
+     * Implementation of binary search algorithm for reverse sorted array
+     * IMPL details:
+     * find the element in mid of the search window.
      * If element is not found then reduce the search window by half and choose the right window by comparing where the element could be found.
      * IMPORTANT: if input array have duplicates, this function can return any match, it does not guarantee first or last occurrence match.
      *
