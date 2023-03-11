@@ -1,0 +1,81 @@
+package arrays._00_BinarySearch._00_BinarySearch;
+
+import java.util.Arrays;
+
+public class _04_BinarySearch_First_And_Last_occurance_of_element {
+
+    public static void main ( String [] args)
+    {
+        int [] arr = {0,1,1,1,1,1,2,4,5,6,7};
+        int x = 1;
+        Arrays.stream(arr).forEach(i-> System.out.print(i+ ", "));
+        System.out.println();
+
+        int firstOccurrenceIndex = findFirstOccurrenceInSortedArray(arr,x);
+
+        if ( firstOccurrenceIndex ==-1)
+            System.out.println("Element : "+x+ " not found in the array.");
+        else
+        {
+            System.out.println("First occurrence of Element : " + x + " found at : " + firstOccurrenceIndex + " index.");
+            int lastOccurrenceIndex = findLastOccurrenceInSortedArray(arr, x);
+            System.out.println("last occurrence of Element : " + x + " found at : " + lastOccurrenceIndex + " index.");
+        }
+    }
+
+
+    /**
+     * Find the first occurrence( index )  of the given element in sorted array
+     * @param inArr sorted array
+     * @param x element, of which first occurrence is to be found.
+     * @return -1 if element not found, or  if array is invalid/null. else return the index of first occurrence of the element.
+     */
+    public static int findFirstOccurrenceInSortedArray(int [] inArr, int x) {
+        if (inArr == null || inArr.length == 0)
+            return -1;
+        int start = 0, end = inArr.length - 1,res =-1;
+        while (start <= end)
+        {
+            int mid = start + ((end-start)/2);
+           // System.out.println("Start : "+start+ " , end "+end+ ", mid : "+mid  );
+            if ( inArr[mid] ==x)
+            {
+                res =mid; // do not break the loop , continue finding the previous one
+                end =mid-1;
+            }
+            else if ( x<mid)
+                end = mid -1;
+            else
+                start = mid +1;
+        }
+        return res;
+    }
+
+
+    /**
+     * Find the last occurrence( index )  of the given element in sorted array
+     * @param inArr sorted array
+     * @param x element, of which last occurrence is to be found.
+     * @return -1 if element not found, or  if array is invalid/null. else return the index of last occurrence of the element.
+     */
+    public static int findLastOccurrenceInSortedArray(int [] inArr, int x) {
+        if (inArr == null || inArr.length == 0)
+            return -1;
+        int start = 0, end = inArr.length - 1,res =-1;
+        while (start <= end)
+        {
+            int mid = start + ((end-start)/2);
+           // System.out.println("Start : "+start+ " , end "+end+ ", mid : "+mid  );
+            if ( inArr[mid] ==x)
+            {
+                res =mid; // do not break the loop , continue finding the previous one
+                start =mid+1;
+            }
+            else if ( x<mid)
+                end = mid -1;
+            else
+                start = mid +1;
+        }
+        return res;
+    }
+}
