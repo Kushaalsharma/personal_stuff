@@ -34,7 +34,7 @@ public class _08_BinarySearch_FindFloorInSortedArray {
          while (start <=end)
          {
              mid = start +((end -start)/2);
-             System.out.println(" start : " +start + " , end : "+end + ", mid  : "+ mid + ", Element[mid] : "+ inArr[mid]);
+             //System.out.println(" start : " +start + " , end : "+end + ", mid  : "+ mid + ", Element[mid] : "+ inArr[mid]);
              if((inArr[mid]==x) || ( inArr[mid]<=x && (isValidIndex(mid+1,inArr) && inArr[mid+1]> x)))
                  return  mid;
 
