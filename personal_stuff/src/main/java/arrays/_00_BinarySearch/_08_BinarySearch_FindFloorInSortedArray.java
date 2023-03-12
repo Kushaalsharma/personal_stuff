@@ -20,7 +20,7 @@ public class _08_BinarySearch_FindFloorInSortedArray {
         if (res == -1)
             System.out.println("Element : "+x+" not found in the array!");
         else
-            System.out.println("Element : "+x+" found at :" +res+ " index , and value is : "+ arr[res]);
+            System.out.println("Floor of  : " + x + " found at : " +res+ " index , and value is : " + arr[res]);
     }
 
     public static int indexOfFloorElementInSortedArray (int inArr[], int x)
